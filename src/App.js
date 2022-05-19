@@ -1,6 +1,6 @@
 import './App.css';
 import NavBar from './Components/Componentes/NavBar/NavBar'
-import ProductList from './Components/Componentes/Producto/ProductList';
+import ItemListContainer from './Components/Componentes/Producto/ItemListContainer';
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <div className='Producto-Item'>
-        <ProductList className='Producto-Cards' title={'Productos'}/>
+        <ItemListContainer className='Producto-Cards' title={'Productos'}/>
       </div>
     </div>
   );

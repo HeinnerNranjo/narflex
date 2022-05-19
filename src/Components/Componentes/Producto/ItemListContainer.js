@@ -1,7 +1,7 @@
 import Producto from '../Producto/Producto'
 import { Grid } from '@mui/material';
 
-const ProductList = ({title}) => {
+const ItemListContainer = ({title}) => {
     return(
         <>
         <h2>{title}</h2>
@@ -23,4 +23,4 @@ const ProductList = ({title}) => {
     )
 }
 
-export default ProductList
+export default ItemListContainer
