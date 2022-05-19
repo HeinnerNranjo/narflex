@@ -1,19 +1,29 @@
 import './App.css';
-import NavBar from './Components/Navbar/NavBar'
-
-
-
-let styleh1 = {
-  color : 'red',
-  border : '10px',
-  marginbottom : '20px'
-}
+import NavBar from './Components/Componentes/NavBar/NavBar'
+import Producto from './Components/Componentes/Producto/Producto'
+import { Container, Grid } from '@mui/material';
 
 function App() {
   return (
-    <div classname="saludo" style={styleh1}>
-      <NavBar />
-    <h1>Hola Narflex</h1>
+    <div classname='saludo'>
+      <NavBar/>
+    <div/>
+      <Container className='Producto-Grid' >
+        <Grid container >
+          <Grid item md={3}>
+            <Producto/>
+          </Grid>
+          <Grid item md={3}>
+            <Producto/>
+          </Grid>
+          <Grid item md={3}>
+            <Producto/>
+          </Grid>
+          <Grid item md={3}>
+            <Producto/>
+          </Grid>
+        </Grid>
+      </Container>  
     </div>
   );
 }

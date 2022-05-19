@@ -1,0 +1,18 @@
+.producto-item {
+    font-size: medium;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+}
+.producto-item img {
+    width: 100%;
+    margin-top: 10px;
+}
+.producto-item Button{
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(247, 124, 36) ;
+    margin-left: auto;
+    margin-right: auto;
+}

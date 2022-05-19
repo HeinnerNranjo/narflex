@@ -1,0 +1,11 @@
+.logo{
+    width: 50px;
+}
+.menuinicial{
+    padding: 5px; 
+    text-align: center;
+}
+.menuinicial li{
+        display: inline-block;
+        margin: 2px;
+}
