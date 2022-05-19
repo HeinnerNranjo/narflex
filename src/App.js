@@ -1,29 +1,16 @@
 import './App.css';
 import NavBar from './Components/Componentes/NavBar/NavBar'
-import Producto from './Components/Componentes/Producto/Producto'
-import { Container, Grid } from '@mui/material';
+import ProductList from './Components/Componentes/Producto/ProductList';
 
 function App() {
+
   return (
-    <div classname='saludo'>
+    //JSX
+    <div className="App">
       <NavBar/>
-    <div/>
-      <Container className='Producto-Grid' >
-        <Grid container >
-          <Grid item md={3}>
-            <Producto/>
-          </Grid>
-          <Grid item md={3}>
-            <Producto/>
-          </Grid>
-          <Grid item md={3}>
-            <Producto/>
-          </Grid>
-          <Grid item md={3}>
-            <Producto/>
-          </Grid>
-        </Grid>
-      </Container>  
+      <div className='Producto-Item'>
+        <ProductList className='Producto-Cards' title={'Productos'}/>
+      </div>
     </div>
   );
 }

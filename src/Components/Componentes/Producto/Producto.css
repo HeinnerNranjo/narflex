@@ -1,18 +1,14 @@
-.producto-item {
-    font-size: medium;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: auto;
+.lista-producto {
+    margin: 10px;
+    padding: 10px;
+    max-width: 1500px;
+    max-height: 1500px;
 }
-.producto-item img {
-    width: 100%;
-    margin-top: 10px;
+.lista-producto img {
+    width:200px; 
+    height:200px;
 }
-.producto-item Button{
-    margin-top: 10px;
-    text-align: center;
-    background-color: rgb(247, 124, 36) ;
-    margin-left: auto;
-    margin-right: auto;
+.lista-producto Button{
+    background-color: rgb(247, 124, 36);
+    padding: 10px;
 }
