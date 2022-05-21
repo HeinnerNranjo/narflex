@@ -7,16 +7,16 @@ const ItemListContainer = ({title}) => {
         <h2>{title}</h2>
         <Grid container>
             <Grid item md={3}>
-                <Producto title={"Colchon D30 200*190"} price={50000} image={"./Imagenes/ColchonD30-200.jpeg"}/>
+                <Producto title={"Colchon D30 200*190"} price={50000} image={"./Imagenes/ColchonD30-200.jpeg"} stock={2}/>
             </Grid>
             <Grid item md={3}>
-                <Producto title={"Colchon D30 140*190"} price={45000} image={"./Imagenes/ColchonD30-140.jpeg"}/>
+                <Producto title={"Colchon D30 140*190"} price={45000} image={"./Imagenes/ColchonD30-140.jpeg"} stock={3}/>
             </Grid>
             <Grid item md={3}>
-                <Producto title={"Colchon D30 120*190"} price={40000} image={"./Imagenes/ColchonD30-120.jpeg"}/>
+                <Producto title={"Colchon D30 120*190"} price={40000} image={"./Imagenes/ColchonD30-120.jpeg"} stock={5}/>
             </Grid>
             <Grid item md={3}>
-                <Producto title={"Colchon D30 100*190"} price={35000} image={"./Imagenes/ColchonD30-100.jpeg"}/>
+                <Producto title={"Colchon D30 100*190"} price={35000} image={"./Imagenes/ColchonD30-100.jpeg"} stock={10}/>
             </Grid>
         </Grid>
         </>

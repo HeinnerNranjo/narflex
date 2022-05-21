@@ -17,13 +17,13 @@ const NavBar = () => {
                         </div>
                         <ul>
                             <li>
-                                <button>Inicio</button>
+                                <button style={{ backgroundColor: 'chocolate' }} >Inicio</button>
                             </li>
                             <li>
-                                <button>Productos</button>
+                                <button style={{ backgroundColor: 'chocolate' }} >Productos</button>
                             </li>
                             <li>
-                                <button>Nosotros</button>
+                                <button style={{ backgroundColor: 'chocolate' }} >Nosotros</button>
                             </li>
                         </ul>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
