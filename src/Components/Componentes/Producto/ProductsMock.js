@@ -32,14 +32,14 @@ const productos = [
         id : 4
     },
 ]
-const producto1 = {
+const producto = {
         title : 'Colchon D30 200*190',
         price : 50000,
         image : './imagenes/ColchonD30-200.jpeg',
-        description : '',
+        description : 'Colchon D30 200*190 Densidad 30 1 año de garantia',
         stock : 2,
         id : 1
 }
 
 export default productos
-export {producto1}
+export {producto}

@@ -6,33 +6,18 @@ import { Button } from '@mui/material';
 import { useState } from 'react';
 
 //Functional Component
-const Producto = ({ image, title, price, stock }) => {
-    const [open, setOpen] = useState(false)
-    const [count, setCount] = useState(1)
-
-    const handleClose = () => {
-        setOpen(false)
-    }
-    const addCount = () => {
-        console.log("stock: ", stock)
-        if(count < stock) {
-            setCount(count + 1)
-        }
-    }
-    const removeCount = () => {
-        if(count > 0) {
-            setCount(count - 1)
-        }
-    }
-
+const ProductItem = ({ image, title, price, stock }) => {
+    console.log("producto id:", id)
     return(
         <Card sx={{ minWidth: 275 }}>
             <CardContent className="lista-producto-Card">
                 <div className="lista-producto">
                     <div>
-                        <img src={`./${image}`}/> 
+                        <img src={`./${image}`} alt={"producto"} /> 
                         <br></br>
-                        <Button variant={'contained'}>Ver Detalle</Button>
+                        <Button variant={'contained'} className="card-btn-details">
+                            <Link to={`/product/${id}`}>Ver Detalle</Link>
+                        </Button>
                     </div>
                     <br></br>
                     <div>
@@ -40,11 +25,6 @@ const Producto = ({ image, title, price, stock }) => {
                             <strong>{title}</strong>
                             <br></br>
                             <span>$ {price}</span>
-                        </div>
-                        <div>
-                            <Button onClick={removeCount}>-</Button>
-                            <p>{count}</p>
-                            <Button onClick={addCount}>+</Button>
                         </div>
                         <Button variant={'contained'} color='warning'>Agregar al carrito</Button>
                     </div>
@@ -54,4 +34,4 @@ const Producto = ({ image, title, price, stock }) => {
     )
 }
 
-export default Producto
+export default ProductItem
