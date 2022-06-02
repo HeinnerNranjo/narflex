@@ -1,23 +1,19 @@
-import * as React from 'react'
-import { Dialog, DialogContent } from '@mui/material';
-import { Button } from '@mui/material';
-import { useState , useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
 
-const Modal = ({handleClose, open}) => {
-    const [count , setCount] = useState(0)
-    useEffect( () => {
-    }, [] )
+const Modal = ({handleClose, open, children}) => {
+    const [count, setCount] = useState(0)
+
     return(
-        <div>
-            <Dialog onClose={handleClose} open={open}>
-                <DialogContent>
-                    <Button onClick={() => setCount(count-1)}>-</Button>
-                    <strong>{count}</strong>
-                    <Button onClick={() => setCount(count + 1)} >+</Button>
-                </DialogContent>
-            </Dialog>
-        </div>
-        )
+        <Dialog onClose={handleClose} open={open}>
+            <DialogContent>
+                <p>{count}</p>
+            <button onClick={() => setCount( count + 1)}>+</button>
+                {children}
+            </DialogContent>
+        </Dialog>
+    )
 }
 
 export default Modal

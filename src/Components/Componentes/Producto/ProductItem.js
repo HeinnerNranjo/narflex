@@ -3,10 +3,10 @@ import './Producto.css'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Button } from '@mui/material';
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 //Functional Component
-const ProductItem = ({ image, title, price, stock }) => {
+const ProductItem = ({ image, title, price, stock, id }) => {
     console.log("producto id:", id)
     return(
         <Card sx={{ minWidth: 275 }}>
